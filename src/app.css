@@ -1,0 +1,120 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+main {
+  margin: 0;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  color: #343a40;
+}
+
+h1 {
+  text-align: center;
+  color: #0056b3;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f8a);
+  transform: translateY(-3px);
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  color: #6c757d;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.oikein {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.vaarin {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.kysymys .numerointi {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.kysymys p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.vastaukset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.vastaukset button {
+  width: 100%;
+}
+
+.tulokset {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.tulokset p {
+  font-weight: bold;
+  color: #0056b3;
+  margin-bottom: 1rem;
+}
+
+.tulokset button {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .kysymys p {
+    font-size: 1.25rem;
+  }
+}
